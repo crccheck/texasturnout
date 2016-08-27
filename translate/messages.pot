@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2016-08-27 05:55:+0000\n"
+"POT-Creation-Date: 2016-08-27 06:11:+0000\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -9,17 +9,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 
-#: scripts/rosedale.js:46
+#: scripts/rosedale.js:48
 msgid ""
 ":smile: :flag-us: :robot_face: The first step for voting is finding out if "
 "you're registered\n"
 ":+1: :-1: :confused:"
 msgstr ""
 
-#: scripts/rosedale.js:55
+#: scripts/rosedale.js:57
 msgid "hooray"
 msgstr ""
 
-#: scripts/rosedale.js:58
+#: scripts/rosedale.js:60
 msgid "oh no"
 msgstr ""

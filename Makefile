@@ -4,6 +4,8 @@ help: ## Shows this help
 
 
 .PHONY: translate
-translate: ## Find text to translate
+translate: ## Do translations (run before .pot and after .po)
 	mkdir -p $@
 	node_modules/.bin/jspot extract scripts/rosedale.js -k _ --target $@
+	node_modules/.bin/jspot json translate/en_US.po --target $@
+	node_modules/.bin/jspot json translate/es_US.po --target $@

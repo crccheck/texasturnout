@@ -4,6 +4,8 @@
 // const Gettext = require("node-gettext")
 // const gt = new Gettext()
 // const _ = gt.gettext  // TODO
+const Jed = require('jed')
+
 const _ = (str) => str
 
 const NEW = 'new'

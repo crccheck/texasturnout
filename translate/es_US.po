@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2016-08-27 13:10-0500\n"
+"Project-Id-Version: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-08-27 13:10-0500\n"
+"X-Generator: Poedit 1.8.8\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_US\n"
+
+#: scripts/rosedale.js:46
+msgid ""
+":smile: :flag-us: :robot_face: The first step for voting is finding out if "
+"you're registered\n"
+":+1: :-1: :confused:"
+msgstr ""
+
+#: scripts/rosedale.js:55
+msgid "hooray"
+msgstr ""
+
+#: scripts/rosedale.js:58
+msgid "oh no"
+msgstr ""

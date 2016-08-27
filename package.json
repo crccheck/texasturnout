@@ -12,7 +12,7 @@
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.17.2",
     "hubot-slack": "^4.0.2",
-    "node-gettext": "^1.1.0"
+    "jed": "^1.1.1"
   },
   "devDependencies": {
     "jspot": "^0.3.12",
