@@ -21,18 +21,18 @@ const key = 'tt:users'
 
 // i18n expects a slightly different format
 function _ (input) {
-  // return i18n.__(input)[1]
-  return '`' + input + '` ' + i18n.__(input)[1]  // DEBUG
+  return i18n.__(input)[1]
+  // return '`' + input + '` ' + i18n.__(input)[1]  // DEBUG
 }
 
 // should I be using a state machine library? ugh, then I'd have to search for a state machine library
 
 function isYes (text) {
-  return text.search(/\bY|:\+1:|1/i) !== -1
+  return text.search(/\bY|:\+1:|thumbsup|1/i) !== -1
 }
 
 function isNo (text) {
-  return text.search(/\bN|:-1:|2/i) !== -1
+  return text.search(/\bN|:-1:|thumbsdown|2/i) !== -1
 }
 
 function sendResponse (robot, res) {
@@ -52,6 +52,11 @@ function sendResponse (robot, res) {
     return
   }
 
+  if (text.length >= 5 && text.toUpperCase() === text) {
+    // ignore uppercase commands
+    return
+  }
+
   if (text === 'reset') {
     Object.assign(userInfo, DEFAULT_STATE)
   }
@@ -62,12 +67,11 @@ function sendResponse (robot, res) {
     userInfo.state = 'day'
   }
 
-  res.reply('```' + JSON.stringify(userInfo, undefined, 2) + '```') // DEBUG
+  // res.reply('```' + JSON.stringify(userInfo, undefined, 2) + '```') // DEBUG
 
   if (userInfo.state === 'new') {
     userInfo.state = 'reg_check'
     robot.brain.set(key, data)
-    re.reply('`' + text + userInfo + '`')
     res.reply(_('new reg_check'))
     return
   }
@@ -156,6 +160,10 @@ function sendResponse (robot, res) {
 module.exports = (robot) => {
   robot.respond(/./i, (res) => {
     sendResponse(robot, res)
+  })
+
+  robot.respond(/RESET/, (res) => {
+    robot.brain.set(key, {})
   })
 
   robot.respond(/EARLY/, (res) => {
