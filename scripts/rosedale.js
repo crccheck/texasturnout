@@ -53,39 +53,41 @@ function sendResponse (robot, res) {
   if (text === 'early') {
     userInfo.state = 'early'
   }
-  if (text === 'debug') {
-    res.reply('```' + JSON.stringify(userInfo, undefined, 2) + '```')
+  if (text === 'day') {
+    userInfo.state = 'day'
   }
+  res.reply('```' + JSON.stringify(userInfo, undefined, 2) + '```') // DEBUG
 
   if (userInfo.state === NEW) {
-    res.reply(_('new reg_check'))
     userInfo.state = REG_CHECK
     robot.brain.set(key, userInfo)
+    res.reply(_('new reg_check'))
     return
   }
 
   if (userInfo.state === REG_CHECK) {
     if (isYes(text)) {
-      userInfo.state = REG_CHECK_Y
+      userInfo.state = 'reg_check_y'
       robot.brain.set(key, userInfo)
       res.reply(_('reg_check reg_check_y'))
       return
     } else if (isNo(text)) {
-      userInfo.state = REG_CHECK_N
+      userInfo.state = 'reg_check_n'
       robot.brain.set(key, userInfo)
       res.reply(_('reg_check reg_check_n'))
       return
     } else {
-      res.reply(_('reg_check reg_check_?'))
+      userInfo.state = 'reg_check_?'
       robot.brain.set(key, userInfo)
+      res.reply(_('reg_check reg_check_?'))
       return
     }
   }
 
   if (userInfo.state === 'early') {
-    res.reply(_('early'))
     userInfo.state = 'early_notified'
     robot.brain.set(key, userInfo)
+    res.reply(_('early'))
     return
   }
 
@@ -144,6 +146,27 @@ function sendResponse (robot, res) {
       res.reply(_('early_?_3_?'))
       return
     }
+  }
+
+  if (userInfo.state === 'election_morning') {
+    userInfo.state = 'election_morning_notified'
+    robot.brain.set(key, userInfo)
+    res.reply(_('election_morning'))
+    return
+  }
+
+  if (userInfo.state === 'election_day') {
+    userInfo.state = 'election_day_notified'
+    robot.brain.set(key, userInfo)
+    res.reply(_('election_day'))
+    return
+  }
+
+  if (userInfo.state === 'election_over') {
+    userInfo.state = 'election_over_notified'
+    robot.brain.set(key, userInfo)
+    res.reply(_('election_over'))
+    return
   }
 }
 
