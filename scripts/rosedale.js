@@ -100,18 +100,15 @@ function sendResponse (robot, res) {
 
   if (userInfo.state === 'early_notified') {
     if (isYes(text)) {
-      userInfo.state = 'early_y'
+      userInfo.state = 'early_?'
       robot.brain.set(key, data)
       res.reply(_('early_y'))
-      return
-    } else if (isNo(text)) {
-      userInfo.state = 'early_n'
-      robot.brain.set(key, data)
-      res.reply(_('early_n'))
+      res.reply(_('early_?'))
       return
     } else {
       userInfo.state = 'early_?'
       robot.brain.set(key, data)
+      res.reply(_('early_n'))
       res.reply(_('early_?'))
       return
     }
@@ -138,18 +135,18 @@ function sendResponse (robot, res) {
 
   if (userInfo.state === 'early_?_3') {
     if (isYes(text)) {
-      userInfo.state = 'early_?_3_y'
-      robot.brain.set(key, data)
+      // userInfo.state = 'early_?_3_y'
+      // robot.brain.set(key, data)
       res.reply(_('early_?_3_y'))
       return
     } else if (isNo(text)) {
-      userInfo.state = 'early_?_3_n'
-      robot.brain.set(key, data)
+      // userInfo.state = 'early_?_3_n'
+      // robot.brain.set(key, data)
       res.reply(_('early_?_3_n'))
       return
     } else {
-      userInfo.state = 'early_?_3_?'
-      robot.brain.set(key, data)
+      // userInfo.state = 'early_?_3_?'
+      // robot.brain.set(key, data)
       res.reply(_('early_?_3_?'))
       return
     }
