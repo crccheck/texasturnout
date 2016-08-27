@@ -4,10 +4,14 @@
 // const Gettext = require("node-gettext")
 // const gt = new Gettext()
 // const _ = gt.gettext  // TODO
-const Jed = require('jed')
+const i18n = require('i18n')
+const path = require('path')
 
-const _ = (str) => str
-
+i18n.configure({
+  // locales: ['en_US', 'es_US'],
+  defaultLocale: 'en_US',
+  directory: path.join(__dirname, '../locales')
+})
 const NEW = 'new'
 const REG_CHECK = 'reg_check'
 const REG_CHECK_Y = 'reg_check_y'
@@ -37,6 +41,11 @@ function sendResponse (robot, res) {
 
   const text = res.message.text.replace('rosedale ', '')
 
+  // i18n expects a slightly different format
+  function __ (input) {
+    return i18n.__(input)[1]
+  }
+
   if (text === 'reset') {
     Object.assign(userInfo, DEFAULT_STATE)
   }
@@ -45,7 +54,7 @@ function sendResponse (robot, res) {
   }
 
   if (userInfo.state === NEW) {
-    res.reply(_(":smile: :flag-us: :robot_face: The first step for voting is finding out if you're registered\n:+1: :-1: :confused:"))
+    res.reply(__('new reg_check'))
     userInfo.state = REG_CHECK
     robot.brain.set(key, userInfo)
     return
@@ -54,10 +63,12 @@ function sendResponse (robot, res) {
   if (userInfo.state === REG_CHECK) {
     if (isYes(text)) {
       userInfo.state = REG_CHECK_Y
-      res.reply(_('hooray'))
+      res.reply(__('reg_check reg_check_y'))
+      return
     } else if (isNo(text)) {
       userInfo.state = REG_CHECK_N
-      res.reply(_('oh no'))
+      res.reply(__('reg_check reg_check_n'))
+      return
     }
   }
 }

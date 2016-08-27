@@ -1,0 +1,27 @@
+{
+    "": {
+        "project-id-version": "",
+        "pot-creation-date": "2016-08-27 13:18-0500",
+        "po-revision-date": "2016-08-27 14:11-0500",
+        "last-translator": "",
+        "language-team": "",
+        "language": "en_US",
+        "mime-version": "1.0",
+        "content-type": "text/plain; charset=UTF-8",
+        "content-transfer-encoding": "8bit",
+        "x-generator": "Poedit 1.8.8",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+    },
+    "new reg_check": [
+        null,
+        ":smile: :flag-us: :robot_face: Thank for signing up. We’ll send you :bell: and :information_source:  about dates and candidates. We don’t support parties or candidates, just so you know. The first step for voting is finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
+    ],
+    "reg_check reg_check_y": [
+        null,
+        ":fire: fire: :fire: :applause emoji: :100:"
+    ],
+    "reg_check reg_check_n": [
+        null,
+        ":poop: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! Do you need help to register? "
+    ]
+}
