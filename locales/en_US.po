@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-08-27 13:18-0500\n"
-"PO-Revision-Date: 2016-08-27 14:11-0500\n"
+"POT-Creation-Date: 2016-08-27 14:20-0500\n"
+"PO-Revision-Date: 2016-08-27 14:20-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -12,14 +12,28 @@ msgstr ""
 "X-Generator: Poedit 1.8.8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: scripts/rosedale.js:49
+#: scripts/rosedale.js:57
 msgid "new reg_check"
-msgstr ":smile: :flag-us: :robot_face: Thank for signing up. We’ll send you :bell: and :information_source:  about dates and candidates. We don’t support parties or candidates, just so you know. The first step for voting is finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
+msgstr ""
+":smile: :flag-us: :robot_face: Thank for signing up. We’ll send you :bell: "
+"and :information_source:  about dates and candidates. We don’t support "
+"parties or candidates, just so you know. The first step for voting is "
+"finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
 
-#: scripts/rosedale.js:58
+#: scripts/rosedale.js:66
 msgid "reg_check reg_check_y"
-msgstr ":fire: fire: :fire: :applause emoji: :100:"
+msgstr ":fire: :fire: :fire: :applause emoji: :100:"
 
-#: scripts/rosedale.js:61
+#: scripts/rosedale.js:70
 msgid "reg_check reg_check_n"
-msgstr ":poop: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! Do you need help to register? "
+msgstr ""
+":poop: :frowning: You should check out the http://elections.bexar.org/"
+"Registration/Register/register.html to find out how to register to vote! Do "
+"you need help to register? "
+
+#: scripts/rosedale.js:73
+msgid "reg_check reg_check_?"
+msgstr ""
+":confused: You should check out http://apps.bexar.org/ElectionSearch/"
+"ElectionSearch.aspx?psearchtab=1 to find out if you’re registered. Be sure "
+"to click the ‘voter registration check’ tab."

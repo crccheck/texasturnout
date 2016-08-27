@@ -25,7 +25,7 @@ const DEFAULT_STATE = {
 // should I be using a state machine library? ugh, then I'd have to search for a state machine library
 
 function isYes (text) {
-  return text.search(/\bY|:+1:/i) !== -1
+  return text.search(/\bY|:\+1:/i) !== -1
 }
 
 function isNo (text) {
@@ -42,7 +42,7 @@ function sendResponse (robot, res) {
   const text = res.message.text.replace('rosedale ', '')
 
   // i18n expects a slightly different format
-  function __ (input) {
+  function _ (input) {
     return i18n.__(input)[1]
   }
 
@@ -54,7 +54,7 @@ function sendResponse (robot, res) {
   }
 
   if (userInfo.state === NEW) {
-    res.reply(__('new reg_check'))
+    res.reply(_('new reg_check'))
     userInfo.state = REG_CHECK
     robot.brain.set(key, userInfo)
     return
@@ -63,11 +63,14 @@ function sendResponse (robot, res) {
   if (userInfo.state === REG_CHECK) {
     if (isYes(text)) {
       userInfo.state = REG_CHECK_Y
-      res.reply(__('reg_check reg_check_y'))
+      res.reply(_('reg_check reg_check_y'))
       return
     } else if (isNo(text)) {
       userInfo.state = REG_CHECK_N
-      res.reply(__('reg_check reg_check_n'))
+      res.reply(_('reg_check reg_check_n'))
+      return
+    } else {
+      res.reply(_('reg_check reg_check_?'))
       return
     }
   }

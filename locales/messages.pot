@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2016-08-27 06:20:+0000\n"
+"POT-Creation-Date: 2016-08-27 07:20:+0000\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -9,14 +9,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 
-#: scripts/rosedale.js:49
+#: scripts/rosedale.js:57
 msgid "new reg_check"
 msgstr ""
 
-#: scripts/rosedale.js:58
+#: scripts/rosedale.js:66
 msgid "reg_check reg_check_y"
 msgstr ""
 
-#: scripts/rosedale.js:61
+#: scripts/rosedale.js:70
 msgid "reg_check reg_check_n"
+msgstr ""
+
+#: scripts/rosedale.js:73
+msgid "reg_check reg_check_?"
 msgstr ""

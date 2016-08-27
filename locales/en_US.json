@@ -1,8 +1,8 @@
 {
     "": {
         "project-id-version": "",
-        "pot-creation-date": "2016-08-27 13:18-0500",
-        "po-revision-date": "2016-08-27 14:11-0500",
+        "pot-creation-date": "2016-08-27 14:20-0500",
+        "po-revision-date": "2016-08-27 14:20-0500",
         "last-translator": "",
         "language-team": "",
         "language": "en_US",
@@ -18,10 +18,14 @@
     ],
     "reg_check reg_check_y": [
         null,
-        ":fire: fire: :fire: :applause emoji: :100:"
+        ":fire: :fire: :fire: :applause emoji: :100:"
     ],
     "reg_check reg_check_n": [
         null,
         ":poop: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! Do you need help to register? "
+    ],
+    "reg_check reg_check_?": [
+        null,
+        ":confused: You should check out http://apps.bexar.org/ElectionSearch/ElectionSearch.aspx?psearchtab=1 to find out if you’re registered. Be sure to click the ‘voter registration check’ tab."
     ]
 }
