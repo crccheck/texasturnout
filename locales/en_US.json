@@ -2,7 +2,7 @@
     "": {
         "project-id-version": "",
         "pot-creation-date": "2016-08-27 15:37-0500",
-        "po-revision-date": "2016-08-27 15:37-0500",
+        "po-revision-date": "2016-08-27 15:46-0500",
         "last-translator": "",
         "language-team": "",
         "language": "en_US",
@@ -22,11 +22,11 @@
     ],
     "reg_check reg_check_y": [
         null,
-        ":fire: :fire: :fire: :applause emoji: :100:"
+        ":fire: :fire: :fire: :clap: :100:"
     ],
     "reg_check reg_check_n": [
         null,
-        ":poop: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! Do you need help to register? "
+        ":poop: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! Do you need help to register? :raising_hand:"
     ],
     "reg_check reg_check_?": [
         null,
@@ -38,7 +38,7 @@
     ],
     "early_y": [
         null,
-        ":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org "
+        ":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org"
     ],
     "early_n": [
         null,

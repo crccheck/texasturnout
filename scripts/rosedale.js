@@ -45,6 +45,13 @@ function sendResponse (robot, res) {
 
   const text = res.message.text.replace('rosedale ', '')
 
+  if (text.toLowerCase() === 'stop') {
+    delete data[userKey]
+    robot.brain.set(key, data)
+    res.reply(_('stop'))
+    return
+  }
+
   if (text === 'reset') {
     Object.assign(userInfo, DEFAULT_STATE)
   }
@@ -54,18 +61,13 @@ function sendResponse (robot, res) {
   if (text === 'day') {
     userInfo.state = 'day'
   }
-  if (text.toLowerCase() === 'stop') {
-    delete data[userKey]
-    robot.brain.set(key, data)
-    res.reply(_('stop'))
-    return
-  }
 
   res.reply('```' + JSON.stringify(userInfo, undefined, 2) + '```') // DEBUG
 
   if (userInfo.state === 'new') {
     userInfo.state = 'reg_check'
     robot.brain.set(key, data)
+    re.reply('`' + text + userInfo + '`')
     res.reply(_('new reg_check'))
     return
   }
@@ -157,6 +159,18 @@ function sendResponse (robot, res) {
 module.exports = (robot) => {
   robot.respond(/./i, (res) => {
     sendResponse(robot, res)
+  })
+
+  robot.respond(/EARLY/, (res) => {
+    const data = robot.brain.get(key) || {}
+    const dataStore = robot.adapter.client.rtm.dataStore
+    Object.keys(data).forEach((key) => {
+      const user = dataStore.getUserById(key)
+      const room = dataStore.getDMByName(user.name)
+      robot.messageRoom(room.id, _('early'))
+      data[key].state = 'early_notified'
+    })
+    robot.brain.save(key, data)
   })
 
   robot.respond(/ELECTION MORNING/, (res) => {

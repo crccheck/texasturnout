@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2016-08-27 08:37:+0000\n"
+"POT-Creation-Date: 2016-08-27 08:46:+0000\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -9,74 +9,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 
-#: scripts/rosedale.js:60
+#: scripts/rosedale.js:51
 msgid "stop"
 msgstr ""
 
-#: scripts/rosedale.js:69
+#: scripts/rosedale.js:71
 msgid "new reg_check"
 msgstr ""
 
-#: scripts/rosedale.js:77
+#: scripts/rosedale.js:79
 msgid "reg_check reg_check_y"
 msgstr ""
 
-#: scripts/rosedale.js:82
+#: scripts/rosedale.js:84
 msgid "reg_check reg_check_n"
 msgstr ""
 
-#: scripts/rosedale.js:87
+#: scripts/rosedale.js:89
 msgid "reg_check reg_check_?"
 msgstr ""
 
-#: scripts/rosedale.js:95
+#: scripts/rosedale.js:97 scripts/rosedale.js:170
 msgid "early"
 msgstr ""
 
-#: scripts/rosedale.js:103
+#: scripts/rosedale.js:105
 msgid "early_y"
 msgstr ""
 
-#: scripts/rosedale.js:108
+#: scripts/rosedale.js:110
 msgid "early_n"
 msgstr ""
 
-#: scripts/rosedale.js:113
+#: scripts/rosedale.js:115
 msgid "early_?"
 msgstr ""
 
-#: scripts/rosedale.js:122
+#: scripts/rosedale.js:124
 msgid "early_?_1"
 msgstr ""
 
-#: scripts/rosedale.js:127
+#: scripts/rosedale.js:129
 msgid "early_?_2"
 msgstr ""
 
-#: scripts/rosedale.js:132
+#: scripts/rosedale.js:134
 msgid "early_?_3"
 msgstr ""
 
-#: scripts/rosedale.js:141
+#: scripts/rosedale.js:143
 msgid "early_?_3_y"
 msgstr ""
 
-#: scripts/rosedale.js:146
+#: scripts/rosedale.js:148
 msgid "early_?_3_n"
 msgstr ""
 
-#: scripts/rosedale.js:151
+#: scripts/rosedale.js:153
 msgid "early_?_3_?"
 msgstr ""
 
-#: scripts/rosedale.js:168
+#: scripts/rosedale.js:182
 msgid "election_morning"
 msgstr ""
 
-#: scripts/rosedale.js:180
+#: scripts/rosedale.js:194
 msgid "election_day"
 msgstr ""
 
-#: scripts/rosedale.js:192
+#: scripts/rosedale.js:206
 msgid "election_over"
 msgstr ""
