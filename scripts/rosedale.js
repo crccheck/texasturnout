@@ -25,11 +25,11 @@ const DEFAULT_STATE = {
 // should I be using a state machine library? ugh, then I'd have to search for a state machine library
 
 function isYes (text) {
-  return text.search(/\bY|:\+1:/i) !== -1
+  return text.search(/\bY|:\+1:|1/i) !== -1
 }
 
 function isNo (text) {
-  return text.search(/\bN|:-1:/i) !== -1
+  return text.search(/\bN|:-1:|2/i) !== -1
 }
 
 function sendResponse (robot, res) {
@@ -43,11 +43,15 @@ function sendResponse (robot, res) {
 
   // i18n expects a slightly different format
   function _ (input) {
-    return i18n.__(input)[1]
+    // return i18n.__(input)[1]
+    return input + ' ' + i18n.__(input)[1]  // DEBUG
   }
 
   if (text === 'reset') {
     Object.assign(userInfo, DEFAULT_STATE)
+  }
+  if (text === 'early') {
+    userInfo.state = 'early'
   }
   if (text === 'debug') {
     res.reply('```' + JSON.stringify(userInfo, undefined, 2) + '```')
@@ -63,14 +67,81 @@ function sendResponse (robot, res) {
   if (userInfo.state === REG_CHECK) {
     if (isYes(text)) {
       userInfo.state = REG_CHECK_Y
+      robot.brain.set(key, userInfo)
       res.reply(_('reg_check reg_check_y'))
       return
     } else if (isNo(text)) {
       userInfo.state = REG_CHECK_N
+      robot.brain.set(key, userInfo)
       res.reply(_('reg_check reg_check_n'))
       return
     } else {
       res.reply(_('reg_check reg_check_?'))
+      robot.brain.set(key, userInfo)
+      return
+    }
+  }
+
+  if (userInfo.state === 'early') {
+    res.reply(_('early'))
+    userInfo.state = 'early_notified'
+    robot.brain.set(key, userInfo)
+    return
+  }
+
+  if (userInfo.state === 'early_notified') {
+    if (isYes(text)) {
+      userInfo.state = 'early_y'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_y'))
+      return
+    } else if (isNo(text)) {
+      userInfo.state = 'early_n'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_n'))
+      return
+    } else {
+      userInfo.state = 'early_?'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_?'))
+      return
+    }
+  }
+
+  if (userInfo.state === 'early_?') {
+    if (text === '1') {
+      userInfo.state = 'early_?_1'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_?_1'))
+      return
+    } else if (text === '2') {
+      userInfo.state = 'early_?_2'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_?_2'))
+      return
+    } else {
+      userInfo.state = 'early_?_3'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_?_3'))
+      return
+    }
+  }
+
+  if (userInfo.state === 'early_?_3') {
+    if (isYes(text)) {
+      userInfo.state = 'early_?_3_y'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_?_3_y'))
+      return
+    } else if (isNo(text)) {
+      userInfo.state = 'early_?_3_n'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_?_3_n'))
+      return
+    } else {
+      userInfo.state = 'early_?_3_?'
+      robot.brain.set(key, userInfo)
+      res.reply(_('early_?_3_?'))
       return
     }
   }

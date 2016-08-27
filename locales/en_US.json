@@ -1,8 +1,8 @@
 {
     "": {
         "project-id-version": "",
-        "pot-creation-date": "2016-08-27 14:20-0500",
-        "po-revision-date": "2016-08-27 14:20-0500",
+        "pot-creation-date": "2016-08-27 14:43-0500",
+        "po-revision-date": "2016-08-27 14:44-0500",
         "last-translator": "",
         "language-team": "",
         "language": "en_US",
@@ -27,5 +27,45 @@
     "reg_check reg_check_?": [
         null,
         ":confused: You should check out http://apps.bexar.org/ElectionSearch/ElectionSearch.aspx?psearchtab=1 to find out if you’re registered. Be sure to click the ‘voter registration check’ tab."
+    ],
+    "early": [
+        null,
+        "Early voting starts in a few weeks. Get informed about what’s on your ballot (link), including local elections. Do you want :information_source: on all the candidates?  [:+1: :-1: :confused:]"
+    ],
+    "early_y": [
+        null,
+        ":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org "
+    ],
+    "early_n": [
+        null,
+        ":poop: Alright. If you change your mind, though, here’s http://www.vote411.org/"
+    ],
+    "early_?": [
+        null,
+        "There are 3 ways to vote: 1. :mailbox_with_mail:, 2. early voting, and 3. in person on :calendar: November 8th. Do you want more information on one of these? You can type back 1, 2 or 3. "
+    ],
+    "early_?_1": [
+        null,
+        "OK. To receive a ballot to vote by mail you have to submit an application. You can go to https://webservices.sos.state.tx.us/vrrequest/bbm.asp to request an application be mailed directly to you. Then you can you fill it out and mail, scan or fax it back. "
+    ],
+    "early_?_2": [
+        null,
+        "We are skipping option 2 for simplicity."
+    ],
+    "early_?_3": [
+        null,
+        "OK. To vote, you must bring ID. Your ID can be a: \n\nTexas Driver License\nTexas Election Identification Certificate (EIC) (end of first text)\nTexas Personal Identification Card issued by DPS\nTexas license to carry a handgun issued by DPS (end of second text)\nUS military identification card containing the person's photograph\nUS citizenship certificate containing the person's photograph\nUS passport (end of third text)\n\nDo you have one of these? (user can text “Yes”, “No” or :confused: or something similar)"
+    ],
+    "early_?_3_y": [
+        null,
+        "You can find your voting location here: https://teamrv-mvp.sos.texas.gov/MVP/mvp.do. Here’s a link to your ballot: http://www.vote411.org/."
+    ],
+    "early_?_3_n": [
+        null,
+        "OK. There are also new options that allow registered voters without photo ID to sign a simple form and present one of the following documents to vote a regular ballot:\nValid voter registration certificate (card)\nCertified birth certificate\nCurrent utility bill\nBank statement\nGovernment check\nPaycheck\nAny other government document with the individual's name and address"
+    ],
+    "early_?_3_?": [
+        null,
+        "TODO how user was confused"
     ]
 }

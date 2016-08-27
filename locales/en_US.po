@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-08-27 14:20-0500\n"
-"PO-Revision-Date: 2016-08-27 14:20-0500\n"
+"POT-Creation-Date: 2016-08-27 14:43-0500\n"
+"PO-Revision-Date: 2016-08-27 14:44-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Generator: Poedit 1.8.8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: scripts/rosedale.js:57
+#: scripts/rosedale.js:60
 msgid "new reg_check"
 msgstr ""
 ":smile: :flag-us: :robot_face: Thank for signing up. We’ll send you :bell: "
@@ -20,20 +20,97 @@ msgstr ""
 "parties or candidates, just so you know. The first step for voting is "
 "finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
 
-#: scripts/rosedale.js:66
+#: scripts/rosedale.js:70
 msgid "reg_check reg_check_y"
 msgstr ":fire: :fire: :fire: :applause emoji: :100:"
 
-#: scripts/rosedale.js:70
+#: scripts/rosedale.js:75
 msgid "reg_check reg_check_n"
 msgstr ""
 ":poop: :frowning: You should check out the http://elections.bexar.org/"
 "Registration/Register/register.html to find out how to register to vote! Do "
 "you need help to register? "
 
-#: scripts/rosedale.js:73
+#: scripts/rosedale.js:78
 msgid "reg_check reg_check_?"
 msgstr ""
 ":confused: You should check out http://apps.bexar.org/ElectionSearch/"
 "ElectionSearch.aspx?psearchtab=1 to find out if you’re registered. Be sure "
 "to click the ‘voter registration check’ tab."
+
+#: scripts/rosedale.js:85
+msgid "early"
+msgstr ""
+"Early voting starts in a few weeks. Get informed about what’s on your ballot "
+"(link), including local elections. Do you want :information_source: on all "
+"the candidates?  [:+1: :-1: :confused:]"
+
+#: scripts/rosedale.js:95
+msgid "early_y"
+msgstr ""
+":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org "
+
+#: scripts/rosedale.js:100
+msgid "early_n"
+msgstr ""
+":poop: Alright. If you change your mind, though, here’s http://www.vote411."
+"org/"
+
+#: scripts/rosedale.js:105
+msgid "early_?"
+msgstr ""
+"There are 3 ways to vote: 1. :mailbox_with_mail:, 2. early voting, and 3. in "
+"person on :calendar: November 8th. Do you want more information on one of "
+"these? You can type back 1, 2 or 3. "
+
+#: scripts/rosedale.js:114
+msgid "early_?_1"
+msgstr ""
+"OK. To receive a ballot to vote by mail you have to submit an application. "
+"You can go to https://webservices.sos.state.tx.us/vrrequest/bbm.asp to "
+"request an application be mailed directly to you. Then you can you fill it "
+"out and mail, scan or fax it back. "
+
+#: scripts/rosedale.js:119
+msgid "early_?_2"
+msgstr "We are skipping option 2 for simplicity."
+
+#: scripts/rosedale.js:124
+msgid "early_?_3"
+msgstr ""
+"OK. To vote, you must bring ID. Your ID can be a: \n"
+"\n"
+"Texas Driver License\n"
+"Texas Election Identification Certificate (EIC) (end of first text)\n"
+"Texas Personal Identification Card issued by DPS\n"
+"Texas license to carry a handgun issued by DPS (end of second text)\n"
+"US military identification card containing the person's photograph\n"
+"US citizenship certificate containing the person's photograph\n"
+"US passport (end of third text)\n"
+"\n"
+"Do you have one of these? (user can text “Yes”, “No” or :confused: or "
+"something similar)"
+
+#: scripts/rosedale.js:132
+msgid "early_?_3_y"
+msgstr ""
+"You can find your voting location here: https://teamrv-mvp.sos.texas.gov/MVP/"
+"mvp.do. Here’s a link to your ballot: http://www.vote411.org/."
+
+#: scripts/rosedale.js:137
+msgid "early_?_3_n"
+msgstr ""
+"OK. There are also new options that allow registered voters without photo ID "
+"to sign a simple form and present one of the following documents to vote a "
+"regular ballot:\n"
+"Valid voter registration certificate (card)\n"
+"Certified birth certificate\n"
+"Current utility bill\n"
+"Bank statement\n"
+"Government check\n"
+"Paycheck\n"
+"Any other government document with the individual's name and address"
+
+#: scripts/rosedale.js:142
+msgid "early_?_3_?"
+msgstr "TODO how user was confused"
