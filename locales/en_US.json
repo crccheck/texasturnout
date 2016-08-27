@@ -1,8 +1,8 @@
 {
     "": {
         "project-id-version": "",
-        "pot-creation-date": "2016-08-27 14:43-0500",
-        "po-revision-date": "2016-08-27 14:44-0500",
+        "pot-creation-date": "2016-08-27 15:37-0500",
+        "po-revision-date": "2016-08-27 15:37-0500",
         "last-translator": "",
         "language-team": "",
         "language": "en_US",
@@ -12,6 +12,10 @@
         "x-generator": "Poedit 1.8.8",
         "plural-forms": "nplurals=2; plural=(n != 1);"
     },
+    "stop": [
+        null,
+        "Goodbye"
+    ],
     "new reg_check": [
         null,
         ":smile: :flag-us: :robot_face: Thank for signing up. We’ll send you :bell: and :information_source:  about dates and candidates. We don’t support parties or candidates, just so you know. The first step for voting is finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
@@ -67,5 +71,17 @@
     "early_?_3_?": [
         null,
         "TODO how user was confused"
+    ],
+    "election_morning": [
+        null,
+        "Don’t forget to vote! :ballot_box_with_ballot: :ballot_box_with_ballot: :ballot_box_with_ballot:"
+    ],
+    "election_day": [
+        null,
+        "Do you need help getting to the polls? [link to whatever entities are giving free rides?}"
+    ],
+    "election_over": [
+        null,
+        ":tada: :confetti_ball: :ballot_box_with_ballot: You voted! Check out the results! (link to  local resource)"
     ]
 }

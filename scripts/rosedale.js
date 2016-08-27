@@ -40,6 +40,7 @@ function sendResponse (robot, res) {
   const userKey = res.message.user.id  // Phone number
   const data = robot.brain.get(key) || {}
   const userInfo = data[userKey] || Object.assign({}, DEFAULT_STATE)
+  data[userKey] = userInfo
   robot.logger.debug(userInfo)
 
   const text = res.message.text.replace('rosedale ', '')
@@ -151,27 +152,6 @@ function sendResponse (robot, res) {
       return
     }
   }
-
-  if (userInfo.state === 'election_morning') {
-    userInfo.state = 'election_morning_notified'
-    robot.brain.set(key, data)
-    res.reply(_('election_morning'))
-    return
-  }
-
-  if (userInfo.state === 'election_day') {
-    userInfo.state = 'election_day_notified'
-    robot.brain.set(key, data)
-    res.reply(_('election_day'))
-    return
-  }
-
-  if (userInfo.state === 'election_over') {
-    userInfo.state = 'election_over_notified'
-    robot.brain.set(key, data)
-    res.reply(_('election_over'))
-    return
-  }
 }
 
 module.exports = (robot) => {
@@ -179,7 +159,39 @@ module.exports = (robot) => {
     sendResponse(robot, res)
   })
 
-  robot.respond(/./i, (res) => {
-    sendResponse(robot, res)
+  robot.respond(/ELECTION MORNING/, (res) => {
+    const data = robot.brain.get(key) || {}
+    const dataStore = robot.adapter.client.rtm.dataStore
+    Object.keys(data).forEach((key) => {
+      const user = dataStore.getUserById(key)
+      const room = dataStore.getDMByName(user.name)
+      robot.messageRoom(room.id, _('election_morning'))
+      data[key].state = 'election_morning_notified'
+    })
+    robot.brain.save(key, data)
+  })
+
+  robot.respond(/ELECTION DAY/, (res) => {
+    const data = robot.brain.get(key) || {}
+    const dataStore = robot.adapter.client.rtm.dataStore
+    Object.keys(data).forEach((key) => {
+      const user = dataStore.getUserById(key)
+      const room = dataStore.getDMByName(user.name)
+      robot.messageRoom(room.id, _('election_day'))
+      data[key].state = 'election_day_notified'
+    })
+    robot.brain.save(key, data)
+  })
+
+  robot.respond(/ELECTION OVER/, (res) => {
+    const data = robot.brain.get(key) || {}
+    const dataStore = robot.adapter.client.rtm.dataStore
+    Object.keys(data).forEach((key) => {
+      const user = dataStore.getUserById(key)
+      const room = dataStore.getDMByName(user.name)
+      robot.messageRoom(room.id, _('election_over'))
+      data[key].state = 'election_over_notified'
+    })
+    robot.brain.save(key, data)
   })
 }
