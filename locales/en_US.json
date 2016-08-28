@@ -2,7 +2,7 @@
     "": {
         "project-id-version": "",
         "pot-creation-date": "2016-08-27 15:37-0500",
-        "po-revision-date": "2016-08-27 15:52-0500",
+        "po-revision-date": "2016-08-28 10:49-0500",
         "last-translator": "",
         "language-team": "",
         "language": "en_US",
@@ -12,33 +12,29 @@
         "x-generator": "Poedit 1.8.8",
         "plural-forms": "nplurals=2; plural=(n != 1);"
     },
-    "stop": [
-        null,
-        "Goodbye"
-    ],
     "new reg_check": [
         null,
-        ":smile: :flag-us: :robot_face: Thank for signing up. We’ll send you :bell: and :information_source:  about dates and candidates. We don’t support parties or candidates, just so you know. The first step for voting is finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
+        ":smile: :flag-us: :robot_face: Thanks for signing up. We’ll send you :bell: and :information_source:  about dates and candidates. We don’t support parties or candidates, just so you know. The first step for voting is finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
     ],
     "reg_check reg_check_y": [
         null,
-        ":fire: :fire: :fire: :clap: :100:"
+        ":fire: :fire: :fire: :clap: :100: Great! Polling location information will be available in a few weeks. We will let you know where to go. :stuck_out_tongue_winking_eye:"
     ],
     "reg_check reg_check_n": [
         null,
-        ":poop: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! Do you need help to register? :raising_hand:"
+        ":poop: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! If you need :raising_hand: registering, (Link to partner organizations or events coming up). You must register by October 11th to vote."
     ],
     "reg_check reg_check_?": [
         null,
-        ":confused: You should check out http://apps.bexar.org/ElectionSearch/ElectionSearch.aspx?psearchtab=1 to find out if you’re registered. Be sure to click the ‘voter registration check’ tab."
+        ":confused: :frowning: You should check out the http://elections.bexar.org/Registration/Register/register.html to find out how to register to vote! If you need :raising_hand: registering, (Link to partner organizations or events coming up). You must register by October 11th to vote."
     ],
     "early": [
         null,
-        "Early voting starts in a few weeks. Get informed about what’s on your ballot (link), including local elections. Do you want :information_source: on all the candidates?  [:+1: :-1:]"
+        "Early voting starts in a few weeks. Get informed about what’s on your ballot, including local elections. Do you want :information_source: on all the candidates?  [:+1: :-1:]"
     ],
     "early_y": [
         null,
-        ":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org"
+        ":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org "
     ],
     "early_n": [
         null,

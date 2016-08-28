@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-08-27 15:37-0500\n"
-"PO-Revision-Date: 2016-08-27 15:52-0500\n"
+"PO-Revision-Date: 2016-08-28 10:49-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -13,46 +13,52 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: scripts/rosedale.js:60
+#, fuzzy
 msgid "stop"
 msgstr "Goodbye"
 
 #: scripts/rosedale.js:69
 msgid "new reg_check"
 msgstr ""
-":smile: :flag-us: :robot_face: Thank for signing up. We’ll send you :bell: "
+":smile: :flag-us: :robot_face: Thanks for signing up. We’ll send you :bell: "
 "and :information_source:  about dates and candidates. We don’t support "
 "parties or candidates, just so you know. The first step for voting is "
 "finding out if you’re registered. Are you registered? [:+1: :-1: :confused:]"
 
 #: scripts/rosedale.js:77
 msgid "reg_check reg_check_y"
-msgstr ":fire: :fire: :fire: :clap: :100:"
+msgstr ""
+":fire: :fire: :fire: :clap: :100: Great! Polling location information will "
+"be available in a few weeks. We will let you know where to go. :"
+"stuck_out_tongue_winking_eye:"
 
 #: scripts/rosedale.js:82
 msgid "reg_check reg_check_n"
 msgstr ""
 ":poop: :frowning: You should check out the http://elections.bexar.org/"
-"Registration/Register/register.html to find out how to register to vote! Do "
-"you need help to register? :raising_hand:"
+"Registration/Register/register.html to find out how to register to vote! If "
+"you need :raising_hand: registering, (Link to partner organizations or "
+"events coming up). You must register by October 11th to vote."
 
 #: scripts/rosedale.js:87
 msgid "reg_check reg_check_?"
 msgstr ""
-":confused: You should check out http://apps.bexar.org/ElectionSearch/"
-"ElectionSearch.aspx?psearchtab=1 to find out if you’re registered. Be sure "
-"to click the ‘voter registration check’ tab."
+":confused: :frowning: You should check out the http://elections.bexar.org/"
+"Registration/Register/register.html to find out how to register to vote! If "
+"you need :raising_hand: registering, (Link to partner organizations or "
+"events coming up). You must register by October 11th to vote."
 
 #: scripts/rosedale.js:95
 msgid "early"
 msgstr ""
-"Early voting starts in a few weeks. Get informed about what’s on your ballot "
-"(link), including local elections. Do you want :information_source: on all "
+"Early voting starts in a few weeks. Get informed about what’s on your "
+"ballot, including local elections. Do you want :information_source: on all "
 "the candidates?  [:+1: :-1:]"
 
 #: scripts/rosedale.js:103
 msgid "early_y"
 msgstr ""
-":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org"
+":clap: :clap: :clap: :100: Great! Here’s a guide: http://www.vote411.org "
 
 #: scripts/rosedale.js:108
 msgid "early_n"
