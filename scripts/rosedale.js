@@ -78,18 +78,18 @@ function sendResponse (robot, res) {
 
   if (userInfo.state === 'reg_check') {
     if (isYes(text)) {
-      userInfo.state = 'reg_check_y'
-      robot.brain.set(key, data)
+      // userInfo.state = 'reg_check_y'
+      // robot.brain.set(key, data)
       res.reply(_('reg_check reg_check_y'))
       return
     } else if (isNo(text)) {
-      userInfo.state = 'reg_check_n'
-      robot.brain.set(key, data)
+      // userInfo.state = 'reg_check_n'
+      // robot.brain.set(key, data)
       res.reply(_('reg_check reg_check_n'))
       return
     } else {
-      userInfo.state = 'reg_check_?'
-      robot.brain.set(key, data)
+      // userInfo.state = 'reg_check_?'
+      // robot.brain.set(key, data)
       res.reply(_('reg_check reg_check_?'))
       return
     }
