@@ -41,7 +41,8 @@ function sendResponse (robot, res) {
   robot.logger.debug(userInfo)
   i18n.setLocale(userInfo.lang)
 
-  const text = res.message.text.replace('rosedale ', '')
+  const text = res.message.text.replace('voteboto ', '')
+  console.log('TEXT', text)
 
   if (text.toLowerCase() === 'stop') {
     delete data[userKey]
@@ -52,20 +53,46 @@ function sendResponse (robot, res) {
 
   if (text.length >= 5 && text.toUpperCase() === text) {
     // ignore uppercase commands
+    robot.logger.info(`IGNORING ${text}`)
     return
   }
 
   if (text === 'reset') {
     Object.assign(userInfo, DEFAULT_STATE)
+    robot.brain.set(key, data)
+    return
   }
+
   if (text === 'early') {
     userInfo.state = 'early'
+    robot.brain.set(key, data)
+    return
   }
+
   if (text === 'day') {
     userInfo.state = 'day'
+    robot.brain.set(key, data)
+    return
   }
 
   // res.reply('```' + JSON.stringify(userInfo, undefined, 2) + '```') // DEBUG
+  if (text.toLowerCase() === 'spanish' || text.toLowerCase() === 'español' || text.toLowerCase() === 'espanol') {
+    userInfo.lang = 'es_US'
+    userInfo.state = 'reg_check'
+    robot.brain.set(key, data)
+    i18n.setLocale(userInfo.lang)
+    res.reply(_('new reg_check'))
+    return
+  }
+
+  if (text.toLowerCase() === 'english') {
+    userInfo.lang = 'en_US'
+    userInfo.state = 'reg_check'
+    robot.brain.set(key, data)
+    i18n.setLocale(userInfo.lang)
+    res.reply(_('new reg_check'))
+    return
+  }
 
   if (userInfo.state === 'new') {
     userInfo.state = 'reg_check'

@@ -2,7 +2,7 @@
     "": {
         "project-id-version": "",
         "pot-creation-date": "2016-08-28 09:53-0500",
-        "po-revision-date": "2016-08-28 09:56-0500",
+        "po-revision-date": "2016-08-28 10:37-0500",
         "last-translator": "",
         "language-team": "",
         "language": "es_US",
@@ -18,43 +18,43 @@
     ],
     "new reg_check": [
         null,
-        ""
+        ":smile: :flag-us: :robot_face: Gracias por registrarte. Te enviaremos :bell: y :information_source: acerca de las fechas y los candidatos. No apoyamos partidos o candidatos, para que lo sepas. El primer paso para la votación es saber si estas registrado. ¿Estás registrado? [:+1: :-1: :confused:]"
     ],
     "reg_check reg_check_y": [
         null,
-        ""
+        ":fire: :fire: :fire: :clap: :100:"
     ],
     "reg_check reg_check_n": [
         null,
-        ""
+        ":poop: :frowning: Usted debe comprobar fuera de la http://elections.bexar.org/Registration/Register/register.html para averiguar cómo registrarse para votar! ¿Necesita ayuda para registrarse? :raising_hand:"
     ],
     "reg_check reg_check_?": [
         null,
-        ""
+        ":confused: Usted debe comprobar fuera de la http://elections.bexar.org/Registration/Register/register.html para averiguar cómo registrarse para votar!  Asegúrese de hacer clic en la pestaña “registro de votantes de verificación”."
     ],
     "early": [
         null,
-        ""
+        "La votación temprana comienza en pocas semanas. Obtener informado acerca de lo que está en su papeleta, incluidas las elecciones locales. ¿Quieres :information_source: en todos los candidatos?  [:+1: :-1:]"
     ],
     "early_y": [
         null,
-        ""
+        ":clap: :clap: :clap: :100: ¡Estupendo! He aquí una guía: http://www.vote411.org "
     ],
     "early_n": [
         null,
-        ""
+        ":poop: Bien. Si cambia de opinión, sin embargo, aquí está http://www.vote411.org/"
     ],
     "early_?": [
         null,
-        ""
+        "Hay 3 maneras de votar: 1. 2. :, :mailbox_with_mail votación temprana, y 3. en persona en :calendar: 8 de noviembre. ¿Quieres más información sobre uno de estos? Se puede escribir de nuevo 1, 2 o 3. "
     ],
     "early_?_1": [
         null,
-        ""
+        "DE ACUERDO. Para recibir una papeleta de voto por correo, usted tiene que presentar una solicitud. Usted puede ir a https://webservices.sos.state.tx.us/vrrequest/bbm.asp para solicitar una solicitud por correo directamente a usted. A continuación, se puede llenar y enviar por correo, escanear o por fax."
     ],
     "early_?_3": [
         null,
-        ""
+        "DE ACUERDO. Para votar, usted debe traer identificación. Su identificación puede ser una:\nLas siete formas de identificación con fotografía aprobadas son las siguientes:\nLicencia de Conducir de Texas expedida por el Departamento de Seguridad Pública (DPS, según sus siglas en inglés)\nCertificado de Identificación Electoral de Texas expedido por el DPS\nTarjeta de Identificación Personal de Texas expedida por el DPS\nLicencia para Portar Armas de Fuego de Texas expedida por el DPS\nCedula de Identificación Militar de los Estados Unidos con fotografía \nCertificado de Ciudadanía de los Estados Unidos con fotografía \nPasaporte de los Estados Unidos\n\n\n\n¿Tiene uno de estos? Puede escribir \"Sí\", \"No\" o :confused:"
     ],
     "early_?_2": [
         null,
@@ -62,11 +62,11 @@
     ],
     "early_?_3_y": [
         null,
-        ""
+        "Puede encontrar su lugar de votación aquí: https://teamrv-mvp.sos.texas.gov/MVP/mvp.do. Aquí hay un enlace a su papeleta: http://www.vote411.org/."
     ],
     "early_?_3_n": [
         null,
-        ""
+        "DE ACUERDO. También hay nuevas opciones que permiten a los votantes registrados sin una identificación con foto para firmar una forma simple y presente uno de los siguientes documentos para votar normalmente:\n¿No puede obtener una de estas identificaciones? Llene una declaración en su sitio de votación dando sus razones y presente uno de los siguientes documentos:\nCertificado de registro electoral valido \nActa de nacimiento certificada original \nFactura reciente de servicios públicos original o copia \nEstado de cuenta bancaria original o copia \nCheque del gobierno original o copia \nCheque de pago original o copia\nDocumento del gobierno con su nombre y dirección original o copia (se requiere documento original si el documento contiene una foto)"
     ],
     "early_?_3_?": [
         null,
@@ -74,14 +74,14 @@
     ],
     "election_morning": [
         null,
-        ""
+        "No se olvide de votar! :ballot_box_with_ballot: :ballot_box_with_ballot: :ballot_box_with_ballot:"
     ],
     "election_day": [
         null,
-        ""
+        "Do you need help getting to the polls? [link to whatever entities are giving free rides?}"
     ],
     "election_over": [
         null,
-        ""
+        ":tada: :confetti_ball: :ballot_box_with_ballot: You voted! Check out the results! (link to  local resource)"
     ]
 }

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-08-28 09:53-0500\n"
-"PO-Revision-Date: 2016-08-28 09:56-0500\n"
+"PO-Revision-Date: 2016-08-28 10:37-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_US\n"
@@ -18,43 +18,56 @@ msgstr "Adiós"
 
 #: scripts/rosedale.js:71
 msgid "new reg_check"
-msgstr ""
+msgstr ":smile: :flag-us: :robot_face: Gracias por registrarte. Te enviaremos :bell: y :information_source: acerca de las fechas y los candidatos. No apoyamos partidos o candidatos, para que lo sepas. El primer paso para la votación es saber si estas registrado. ¿Estás registrado? [:+1: :-1: :confused:]"
 
 #: scripts/rosedale.js:79
 msgid "reg_check reg_check_y"
-msgstr ""
+msgstr ":fire: :fire: :fire: :clap: :100:"
 
 #: scripts/rosedale.js:84
 msgid "reg_check reg_check_n"
-msgstr ""
+msgstr ":poop: :frowning: Usted debe comprobar fuera de la http://elections.bexar.org/Registration/Register/register.html para averiguar cómo registrarse para votar! ¿Necesita ayuda para registrarse? :raising_hand:"
 
 #: scripts/rosedale.js:89
 msgid "reg_check reg_check_?"
-msgstr ""
+msgstr ":confused: Usted debe comprobar fuera de la http://elections.bexar.org/Registration/Register/register.html para averiguar cómo registrarse para votar!  Asegúrese de hacer clic en la pestaña “registro de votantes de verificación”."
 
 #: scripts/rosedale.js:97 scripts/rosedale.js:167
 msgid "early"
-msgstr ""
+msgstr "La votación temprana comienza en pocas semanas. Obtener informado acerca de lo que está en su papeleta, incluidas las elecciones locales. ¿Quieres :information_source: en todos los candidatos?  [:+1: :-1:]"
 
 #: scripts/rosedale.js:105
 msgid "early_y"
-msgstr ""
+msgstr ":clap: :clap: :clap: :100: ¡Estupendo! He aquí una guía: http://www.vote411.org "
 
 #: scripts/rosedale.js:110
 msgid "early_n"
-msgstr ""
+msgstr ":poop: Bien. Si cambia de opinión, sin embargo, aquí está http://www.vote411.org/"
 
 #: scripts/rosedale.js:115
 msgid "early_?"
-msgstr ""
+msgstr "Hay 3 maneras de votar: 1. 2. :, :mailbox_with_mail votación temprana, y 3. en persona en :calendar: 8 de noviembre. ¿Quieres más información sobre uno de estos? Se puede escribir de nuevo 1, 2 o 3. "
 
 #: scripts/rosedale.js:124
 msgid "early_?_1"
-msgstr ""
+msgstr "DE ACUERDO. Para recibir una papeleta de voto por correo, usted tiene que presentar una solicitud. Usted puede ir a https://webservices.sos.state.tx.us/vrrequest/bbm.asp para solicitar una solicitud por correo directamente a usted. A continuación, se puede llenar y enviar por correo, escanear o por fax."
 
 #: scripts/rosedale.js:125 scripts/rosedale.js:131
 msgid "early_?_3"
 msgstr ""
+"DE ACUERDO. Para votar, usted debe traer identificación. Su identificación puede ser una:\n"
+"Las siete formas de identificación con fotografía aprobadas son las siguientes:\n"
+"Licencia de Conducir de Texas expedida por el Departamento de Seguridad Pública (DPS, según sus siglas en inglés)\n"
+"Certificado de Identificación Electoral de Texas expedido por el DPS\n"
+"Tarjeta de Identificación Personal de Texas expedida por el DPS\n"
+"Licencia para Portar Armas de Fuego de Texas expedida por el DPS\n"
+"Cedula de Identificación Militar de los Estados Unidos con fotografía \n"
+"Certificado de Ciudadanía de los Estados Unidos con fotografía \n"
+"Pasaporte de los Estados Unidos\n"
+"\n"
+"\n"
+"\n"
+"¿Tiene uno de estos? Puede escribir \"Sí\", \"No\" o :confused:"
 
 #: scripts/rosedale.js:130
 msgid "early_?_2"
@@ -62,11 +75,20 @@ msgstr ""
 
 #: scripts/rosedale.js:140
 msgid "early_?_3_y"
-msgstr ""
+msgstr "Puede encontrar su lugar de votación aquí: https://teamrv-mvp.sos.texas.gov/MVP/mvp.do. Aquí hay un enlace a su papeleta: http://www.vote411.org/."
 
 #: scripts/rosedale.js:145
 msgid "early_?_3_n"
 msgstr ""
+"DE ACUERDO. También hay nuevas opciones que permiten a los votantes registrados sin una identificación con foto para firmar una forma simple y presente uno de los siguientes documentos para votar normalmente:\n"
+"¿No puede obtener una de estas identificaciones? Llene una declaración en su sitio de votación dando sus razones y presente uno de los siguientes documentos:\n"
+"Certificado de registro electoral valido \n"
+"Acta de nacimiento certificada original \n"
+"Factura reciente de servicios públicos original o copia \n"
+"Estado de cuenta bancaria original o copia \n"
+"Cheque del gobierno original o copia \n"
+"Cheque de pago original o copia\n"
+"Documento del gobierno con su nombre y dirección original o copia (se requiere documento original si el documento contiene una foto)"
 
 #: scripts/rosedale.js:150
 msgid "early_?_3_?"
@@ -74,12 +96,12 @@ msgstr ""
 
 #: scripts/rosedale.js:179
 msgid "election_morning"
-msgstr ""
+msgstr "No se olvide de votar! :ballot_box_with_ballot: :ballot_box_with_ballot: :ballot_box_with_ballot:"
 
 #: scripts/rosedale.js:191
 msgid "election_day"
-msgstr ""
+msgstr "Do you need help getting to the polls? [link to whatever entities are giving free rides?}"
 
 #: scripts/rosedale.js:203
 msgid "election_over"
-msgstr ""
+msgstr ":tada: :confetti_ball: :ballot_box_with_ballot: You voted! Check out the results! (link to  local resource)"
