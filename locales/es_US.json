@@ -1,26 +1,86 @@
 {
     "": {
-        "pot-creation-date": "2016-08-27 13:10-0500",
         "project-id-version": "",
+        "pot-creation-date": "2016-08-28 09:53-0500",
+        "po-revision-date": "2016-08-28 09:56-0500",
+        "last-translator": "",
         "language-team": "",
+        "language": "es_US",
         "mime-version": "1.0",
         "content-type": "text/plain; charset=UTF-8",
         "content-transfer-encoding": "8bit",
-        "po-revision-date": "2016-08-27 13:10-0500",
         "x-generator": "Poedit 1.8.8",
-        "last-translator": "",
-        "plural-forms": "nplurals=2; plural=(n != 1);",
-        "language": "es_US"
+        "plural-forms": "nplurals=2; plural=(n != 1);"
     },
-    ":smile: :flag-us: :robot_face: The first step for voting is finding out if you're registered\n:+1: :-1: :confused:": [
+    "stop": [
+        null,
+        "Adiós"
+    ],
+    "new reg_check": [
         null,
         ""
     ],
-    "hooray": [
+    "reg_check reg_check_y": [
         null,
         ""
     ],
-    "oh no": [
+    "reg_check reg_check_n": [
+        null,
+        ""
+    ],
+    "reg_check reg_check_?": [
+        null,
+        ""
+    ],
+    "early": [
+        null,
+        ""
+    ],
+    "early_y": [
+        null,
+        ""
+    ],
+    "early_n": [
+        null,
+        ""
+    ],
+    "early_?": [
+        null,
+        ""
+    ],
+    "early_?_1": [
+        null,
+        ""
+    ],
+    "early_?_3": [
+        null,
+        ""
+    ],
+    "early_?_2": [
+        null,
+        ""
+    ],
+    "early_?_3_y": [
+        null,
+        ""
+    ],
+    "early_?_3_n": [
+        null,
+        ""
+    ],
+    "early_?_3_?": [
+        null,
+        ""
+    ],
+    "election_morning": [
+        null,
+        ""
+    ],
+    "election_day": [
+        null,
+        ""
+    ],
+    "election_over": [
         null,
         ""
     ]

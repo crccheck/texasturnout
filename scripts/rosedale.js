@@ -1,9 +1,6 @@
 // Description:
 //   TT & SND Texas Turnout sms voting
 
-// const Gettext = require("node-gettext")
-// const gt = new Gettext()
-// const _ = gt.gettext  // TODO
 const i18n = require('i18n')
 const path = require('path')
 
@@ -15,7 +12,7 @@ i18n.configure({
 
 const DEFAULT_STATE = {
   state: 'new',
-  lang: 'en'
+  lang: 'en_US'
 }
 const key = 'tt:users'
 
@@ -42,6 +39,7 @@ function sendResponse (robot, res) {
   const userInfo = data[userKey] || Object.assign({}, DEFAULT_STATE)
   data[userKey] = userInfo
   robot.logger.debug(userInfo)
+  i18n.setLocale(userInfo.lang)
 
   const text = res.message.text.replace('rosedale ', '')
 
@@ -172,6 +170,7 @@ module.exports = (robot) => {
     Object.keys(data).forEach((key) => {
       const user = dataStore.getUserById(key)
       const room = dataStore.getDMByName(user.name)
+      i18n.setLocale(data[key].lang)
       robot.messageRoom(room.id, _('early'))
       data[key].state = 'early_notified'
     })
@@ -184,6 +183,7 @@ module.exports = (robot) => {
     Object.keys(data).forEach((key) => {
       const user = dataStore.getUserById(key)
       const room = dataStore.getDMByName(user.name)
+      i18n.setLocale(data[key].lang)
       robot.messageRoom(room.id, _('election_morning'))
       data[key].state = 'election_morning_notified'
     })
@@ -196,6 +196,7 @@ module.exports = (robot) => {
     Object.keys(data).forEach((key) => {
       const user = dataStore.getUserById(key)
       const room = dataStore.getDMByName(user.name)
+      i18n.setLocale(data[key].lang)
       robot.messageRoom(room.id, _('election_day'))
       data[key].state = 'election_day_notified'
     })
@@ -208,6 +209,7 @@ module.exports = (robot) => {
     Object.keys(data).forEach((key) => {
       const user = dataStore.getUserById(key)
       const room = dataStore.getDMByName(user.name)
+      i18n.setLocale(data[key].lang)
       robot.messageRoom(room.id, _('election_over'))
       data[key].state = 'election_over_notified'
     })

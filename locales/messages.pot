@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2016-08-27 08:52:+0000\n"
+"POT-Creation-Date: 2016-08-28 02:56:+0000\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -9,74 +9,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 
-#: scripts/rosedale.js:51
+#: scripts/rosedale.js:48
 msgid "stop"
 msgstr ""
 
-#: scripts/rosedale.js:71
+#: scripts/rosedale.js:72
 msgid "new reg_check"
 msgstr ""
 
-#: scripts/rosedale.js:79
+#: scripts/rosedale.js:80
 msgid "reg_check reg_check_y"
 msgstr ""
 
-#: scripts/rosedale.js:84
+#: scripts/rosedale.js:85
 msgid "reg_check reg_check_n"
 msgstr ""
 
-#: scripts/rosedale.js:89
+#: scripts/rosedale.js:90
 msgid "reg_check reg_check_?"
 msgstr ""
 
-#: scripts/rosedale.js:97 scripts/rosedale.js:167
+#: scripts/rosedale.js:98 scripts/rosedale.js:172
 msgid "early"
 msgstr ""
 
-#: scripts/rosedale.js:105
+#: scripts/rosedale.js:106
 msgid "early_y"
 msgstr ""
 
-#: scripts/rosedale.js:110
-msgid "early_n"
-msgstr ""
-
-#: scripts/rosedale.js:115
+#: scripts/rosedale.js:107 scripts/rosedale.js:113
 msgid "early_?"
 msgstr ""
 
-#: scripts/rosedale.js:124
+#: scripts/rosedale.js:112
+msgid "early_n"
+msgstr ""
+
+#: scripts/rosedale.js:122
 msgid "early_?_1"
 msgstr ""
 
-#: scripts/rosedale.js:125 scripts/rosedale.js:131
-msgid "early_?_3"
-msgstr ""
-
-#: scripts/rosedale.js:130
+#: scripts/rosedale.js:127
 msgid "early_?_2"
 msgstr ""
 
-#: scripts/rosedale.js:140
+#: scripts/rosedale.js:132
+msgid "early_?_3"
+msgstr ""
+
+#: scripts/rosedale.js:141
 msgid "early_?_3_y"
 msgstr ""
 
-#: scripts/rosedale.js:145
+#: scripts/rosedale.js:146
 msgid "early_?_3_n"
 msgstr ""
 
-#: scripts/rosedale.js:150
+#: scripts/rosedale.js:151
 msgid "early_?_3_?"
 msgstr ""
 
-#: scripts/rosedale.js:179
+#: scripts/rosedale.js:184
 msgid "election_morning"
 msgstr ""
 
-#: scripts/rosedale.js:191
+#: scripts/rosedale.js:196
 msgid "election_day"
 msgstr ""
 
-#: scripts/rosedale.js:203
+#: scripts/rosedale.js:208
 msgid "election_over"
 msgstr ""

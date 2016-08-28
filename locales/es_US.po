@@ -1,28 +1,85 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2016-08-27 13:10-0500\n"
 "Project-Id-Version: \n"
+"POT-Creation-Date: 2016-08-28 09:53-0500\n"
+"PO-Revision-Date: 2016-08-28 09:56-0500\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: es_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-08-27 13:10-0500\n"
 "X-Generator: Poedit 1.8.8\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: es_US\n"
 
-#: scripts/rosedale.js:46
-msgid ""
-":smile: :flag-us: :robot_face: The first step for voting is finding out if "
-"you're registered\n"
-":+1: :-1: :confused:"
+#: scripts/rosedale.js:51
+msgid "stop"
+msgstr "Adiós"
+
+#: scripts/rosedale.js:71
+msgid "new reg_check"
 msgstr ""
 
-#: scripts/rosedale.js:55
-msgid "hooray"
+#: scripts/rosedale.js:79
+msgid "reg_check reg_check_y"
 msgstr ""
 
-#: scripts/rosedale.js:58
-msgid "oh no"
+#: scripts/rosedale.js:84
+msgid "reg_check reg_check_n"
+msgstr ""
+
+#: scripts/rosedale.js:89
+msgid "reg_check reg_check_?"
+msgstr ""
+
+#: scripts/rosedale.js:97 scripts/rosedale.js:167
+msgid "early"
+msgstr ""
+
+#: scripts/rosedale.js:105
+msgid "early_y"
+msgstr ""
+
+#: scripts/rosedale.js:110
+msgid "early_n"
+msgstr ""
+
+#: scripts/rosedale.js:115
+msgid "early_?"
+msgstr ""
+
+#: scripts/rosedale.js:124
+msgid "early_?_1"
+msgstr ""
+
+#: scripts/rosedale.js:125 scripts/rosedale.js:131
+msgid "early_?_3"
+msgstr ""
+
+#: scripts/rosedale.js:130
+msgid "early_?_2"
+msgstr ""
+
+#: scripts/rosedale.js:140
+msgid "early_?_3_y"
+msgstr ""
+
+#: scripts/rosedale.js:145
+msgid "early_?_3_n"
+msgstr ""
+
+#: scripts/rosedale.js:150
+msgid "early_?_3_?"
+msgstr ""
+
+#: scripts/rosedale.js:179
+msgid "election_morning"
+msgstr ""
+
+#: scripts/rosedale.js:191
+msgid "election_day"
+msgstr ""
+
+#: scripts/rosedale.js:203
+msgid "election_over"
 msgstr ""
